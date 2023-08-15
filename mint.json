@@ -54,7 +54,7 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "pages": ["introduction", "quickstart", "development", "newpage"]
     },
     {
       "group": "Essentials",
@@ -66,12 +66,7 @@
     },
     {
       "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
-      ]
+      "pages": ["api-reference/endpoint/get", "api-reference/endpoint/create", "api-reference/endpoint/update", "api-reference/endpoint/delete"]
     }
   ],
   "footerSocials": {
