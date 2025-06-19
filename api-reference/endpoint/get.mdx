@@ -4,7 +4,7 @@ api: "GET https://api.mintlify.com/api/user"
 description: "This endpoint gets or creates a new user."
 ---
 
-### Body
+### Body Changed
 
 <ParamField body="name" type="string">
   This is the name of the user group.
@@ -35,36 +35,28 @@ description: "This endpoint gets or creates a new user."
 </ResponseField>
 
 <ResponseField name="user_group" type="object">
+  The contents of the user group
 
-The contents of the user group
-
-<Expandable title="Toggle object">
-
-<ResponseField name="team_id" type="number">
-  This is the internal ID for this user group. You don't need to record this information, since
-  you will not need to use it.
-</ResponseField>
-
-<ResponseField name="token" type="string">
-  This is the user group token (userGroupToken or USER_GROUP_TOKEN) that will be used to identify
-  which user group is viewing the dashboard. You should save this on your end to use when rendering
-  an embedded dashboard.
-</ResponseField>
-
-<ResponseField name="name" type="string">
-  This is the name of the user group provided in the request body.
-</ResponseField>
-
-<ResponseField name="provided_id" type="string">
-  This is the user_group_id provided in the request body.
-</ResponseField>
-
-<ResponseField name="properties" type="JSON or null">
-  This is the properties object if it was provided in the request body
-</ResponseField>
-
-</Expandable>
-
+  <Expandable title="Toggle object">
+    <ResponseField name="team_id" type="number">
+      This is the internal ID for this user group. You don't need to record this information, since
+      you will not need to use it.
+    </ResponseField>
+    <ResponseField name="token" type="string">
+      This is the user group token (userGroupToken or USER_GROUP_TOKEN) that will be used to identify
+      which user group is viewing the dashboard. You should save this on your end to use when rendering
+      an embedded dashboard.
+    </ResponseField>
+    <ResponseField name="name" type="string">
+      This is the name of the user group provided in the request body.
+    </ResponseField>
+    <ResponseField name="provided_id" type="string">
+      This is the user_group_id provided in the request body.
+    </ResponseField>
+    <ResponseField name="properties" type="JSON or null">
+      This is the properties object if it was provided in the request body
+    </ResponseField>
+  </Expandable>
 </ResponseField>
 
 <RequestExample>
